@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial 1.0">
+    <title>Product Card</title>
+  </head>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Arial';
+    }
+
+    body{
+      height:100vh;
+      width:100%;
+      display:flex;;
+      align-items:center;
+      justify-content:center;
+      background:#e6e6e6;
+      background:linear-gradient(180deg, #fff, #ff0000);
+    }
+    
+    .container{
+      display:flex;
+      width:1000px;
+      height:700px;
+      border-radius:12px;
+      background:#fff;
+      box-shadow:0 5px 10px rgba(0, 0, 0, 0.15);
+      justify-content:space-between;
+      position:relative;
+    }
+    
+    .container::before{
+      position:absolute;
+      content:'';
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      
+    }
+
+    .details .price-box .price{
+        color:#ffd700;
+        font-size:30px;
+      }
+
+    .price-box .discount::before{
+            content:'';
+            position:absolute;
+            height:1px;
+            width:100px;
+            background:#737373;
+            top:50%;
+            left:-8px;
+      }
+    
+    .container .box-one {
+        padding:35px 5px 0 35px;
+        padding:35px 5px 0 35px;
+      
+    }
+    .box-one .details .topic{
+      font-size:40px;
+      font-weight:900;
+      text-decoration:underline;
+    }
+
+    .box.one .details p{
+      color:#737373;
+      font-size:13px;
+      font-weight:500;
+    }
+
+    .box-one .details .rating{
+      color:#ffd700;
+    }
+
+    .box-one .details .price-box{
+        margin-top:16px;
+      z-index:2;
+      
+    }
+
+    .box-one .btn button{
+      outline:none;
+      background:#00e6e6;
+      color:#fff;
+      margin-top:34px;
+      padding:8px 16px;
+      border-radius:6px;
+      font-weight:500;
+      font-size:16px;
+      cursor:pointer;
+      border:none;
+      transition:all 0.3s ease;
+    }
+
+
+
+    .box-one .box-two .image-box{
+      position:relative;
+      text-align:right;
+      right:0;
+      bottom:19px;
+      
+    }
+
+    .details .price-box .discount{
+          font-size:20px;
+          color:#737373;
+          margin:10px 0 0 12px;
+          position:relative;
+    }
+      
+
+    .container  .box-two .image{
+       height:500px;
+        width:500px;
+    }
+
+    .box-two .image img{
+      height:700px;
+      width:600px;
+      overflow:shown;
+    }
+
+    .box-two .info {
+      margin:0 35px 0 0;
+      
+    }
+
+      .box-two .info .brand{
+        font-size:45px;
+        font-weight:900;
+        color:#ff0000;
+        padding-top:10px;
+      }
+
+    .box-two .info .name{
+      font-size:32px;
+      font-weight:800;
+    }
+
+    b{
+      font-weight:900;
+    }
+    .my-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.my-logo img {
+  width: auto;
+  height:150px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+}
+</style>
+  <body>
+    <div class="my-logo">
+  <a href="https://www.owenbreezy.vercel.app"><img src="owen-breezy-tech-logo-pro-transparent.png" alt="Owami Mzelemu logo"></a>
+    </div>
+
+    <div class="container">
+      <div class="box-one">
+        <div class="details">
+          <div class="topic">Description</div><br/>
+          <p><b>Screen</b> - 14.0-inch Full HD (1920 x 1080) IPS Anti-Glare.</p><br/>
+         <p><b>CPU</b> -  Core i5-10210U / i5-1135G7 / i7-1165G7 (10th & 11tg Gen available).</p><br/>
+         <p> <b>Connectivity</b> - Wi-Fi 6E, Bluetooth 5.1, RJ-45 Ethernet.</p><br/>
+         <p> <b>Storage</b> - 16GB of RAM + 512GB NVMe SSD (up to 1TB).</p><br/>
+          <p><b>GPU</b> - Intel UHD Graphics / Intel
+            Iris Xe Graphics.</p><br/>
+        <p><b>Operating System</b> -  Windows 10 Pro (Windows 11 Pro ready).</p><br/>
+          <div class="rating">★★★★★</div>
+          <div class="price-box">
+            <div class="discount">R26,399.00</div>
+            <div class="price"><b>R21,419.00</b></div>
+        </div>
+      </div>
+        <div class="btn">
+          <button>Add To Cart</button>
+        </div>
+    </div>
+      <div class="box-two">
+        <div class="image-box">
+          <div class="image">
+            <img src="Product.png" alt="laptop">
+          </div>
+          <div class="info">
+            <div class="brand">Lenovo</div>
+            <div class="name">Lenovo ThinkPad E14</div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+  </body>
+</html>
+    
