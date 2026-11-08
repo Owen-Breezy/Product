@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slim Aluminium Wireless Combo - Silver | Owen Breezy Tech</title>
+<style>
+  *{ margin:0; padding:0; box-sizing:border-box; font-family:Arial, Helvetica, sans-serif; }
+  body{
+    min-height:100vh; width:100%;
+    display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(180deg,#fff,#c0c0c0);
+    padding:90px 16px 30px;
+  }
+  .my-logo{ position:absolute; top:0; left:0; z-index:100; }
+  .my-logo img{ height:90px; width:auto; object-fit:contain; filter:drop-shadow(0 2px 8px rgba(0,0,0,.4)); }
+
+  .container{
+    display:flex; width:1000px; max-width:100%; min-height:620px;
+    border-radius:16px; background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    overflow:hidden; position:relative;
+  }
+  .box-one{
+    flex:1; padding:35px; display:flex; flex-direction:column; justify-content:space-between;
+  }
+  .box-one .topic{ font-size:32px; font-weight:900; text-decoration:underline; margin-bottom:18px; }
+  .box-one .details p{ color:#555; font-size:14px; line-height:1.6; margin-bottom:10px; }
+  .box-one .details p b{ color:#111; }
+  .rating{ color:#ffb300; font-size:20px; letter-spacing:3px; margin:10px 0 4px; }
+  .rating small{ color:#888; font-size:12px; letter-spacing:0; margin-left:6px; }
+  .price-box{ margin-top:16px; }
+  .discount{
+    font-size:18px; color:#888; position:relative; display:inline-block;
+  }
+  .discount::after{ content:''; position:absolute; left:0; top:50%; width:100%; height:2px; background:#ff0000; }
+  .price{ color:#111; font-size:34px; font-weight:900; margin-top:4px; }
+  .price span{ font-size:16px; color:#00a651; font-weight:700; margin-left:8px; }
+  .save-badge{ display:inline-block; background:#f0f0f0; color:#111; font-size:12px; font-weight:800; padding:4px 10px; border-radius:20px; margin-top:8px; }
+
+  .btn button{
+    outline:none; background:#111; color:#fff; border:none;
+    margin-top:24px; padding:14px 22px; width:100%;
+    border-radius:8px; font-weight:800; font-size:16px; cursor:pointer; transition:.2s;
+  }
+  .btn button:hover{ background:#333; transform:translateY(-1px); }
+  .btn button:active{ transform:scale(.98); }
+  .secure{ font-size:11px; color:#888; text-align:center; margin-top:10px; }
+
+  .box-two{
+    flex:1; background:#000; padding:30px 30px 20px;
+    display:flex; flex-direction:column;
+  }
+  .image-box{
+    flex:1; display:flex; align-items:center; justify-content:center;
+    background:#000; border-radius:12px; overflow:hidden; min-height:320px;
+  }
+  .image-box img{
+    width:100%; height:100%; max-height:380px;
+    object-fit:contain; object-position:center; display:block;
+  }
+  .box-two .info{ margin-top:18px; text-align:left; color:#fff; }
+  .box-two .info .brand{ font-size:30px; font-weight:900; color:#e8e8e8; line-height:1; letter-spacing:1px; }
+  .box-two .info .name{ font-size:26px; font-weight:800; margin-top:6px; }
+  .box-two .info .tag{ font-size:12px; color:#aaa; margin-top:6px; }
+  .colour-dots{ display:flex; gap:8px; margin-top:12px; align-items:center; }
+  .colour-dots span{ font-size:12px; color:#aaa; }
+  .dot{ width:22px; height:22px; border-radius:50%; border:2px solid #fff; }
+  .dot.silver{ background:linear-gradient(135deg,#fff,#c0c0c0); }
+  .dot.white{ background:#f5f5f5; }
+
+  .modal{
+    position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:999;
+    display:none; align-items:center; justify-content:center; padding:16px;
+  }
+  .modal.open{ display:flex; }
+  .modal-card{
+    background:#fff; width:100%; max-width:420px; border-radius:16px;
+    padding:32px 24px; text-align:center; box-shadow:0 20px 50px rgba(0,0,0,.3);
+    animation:pop .25s ease;
+  }
+  @keyframes pop{ from{ transform:scale(.9); opacity:0; } to{ transform:scale(1); opacity:1; } }
+  .check{ width:64px; height:64px; background:#00c853; color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:32px; margin:0 auto 16px; }
+  .modal-card h2{ font-size:22px; margin-bottom:8px; }
+  .modal-card p{ color:#666; font-size:14px; line-height:1.5; }
+  .modal-card .item{ background:#f6f6f6; border-radius:10px; padding:12px; margin:16px 0; font-size:14px; display:flex; justify-content:space-between; text-align:left; }
+  .modal-card .item b{ font-size:16px; white-space:nowrap; margin-left:10px; }
+  .modal-btns{ display:flex; gap:10px; }
+  .modal-btns button{ flex:1; padding:12px; border-radius:8px; font-weight:800; cursor:pointer; border:none; font-size:14px; }
+  .btn-continue{ background:#111; color:#fff; }
+  .btn-close{ background:#eee; color:#111; }
+
+  @media(max-width:768px){
+    .container{ flex-direction:column-reverse; }
+    .box-two{ padding:20px; }
+    .image-box{ min-height:260px; }
+    .box-two .info .brand{ font-size:24px; }
+    .box-two .info .name{ font-size:22px; }
+    .box-one{ padding:24px; }
+    .box-one .topic{ font-size:26px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="my-logo">
+    <a href="https://www.owenbreezy.vercel.app"><img src="owen-breezy-tech-logo-pro-transparent.png" alt="Owami Mzelemu logo"></a>
+  </div>
+
+  <div class="container">
+    <div class="box-one">
+      <div class="details">
+        <div class="topic">Description</div>
+        <p><b>Keyboard</b> - Slim aluminium, compact 78-key layout, <b>NO number pad</b>, low-profile chiclet / scissor keys, round volume knob.</p>
+        <p><b>Mouse</b> - Slim, flat silver wireless mouse, 2 buttons + scroll wheel, quiet clicks.</p>
+        <p><b>Colour</b> - Silver / White, aluminium top plate, white keys.</p>
+        <p><b>Connectivity</b> - 2.4 GHz wireless + Bluetooth dual-mode, 1x USB Nano Receiver, up to 10m range.</p>
+        <p><b>Battery</b> - Keyboard rechargeable via Type-C, Mouse 2x AAA. Up to 60 hrs use, ~180 days standby.</p>
+        <p><b>Compatibility</b> - Windows, macOS, iOS, Android. Plug & Play.</p>
+        <p><b>In The Box</b> - 1x Slim Wireless Keyboard, 1x Slim Wireless Mouse, 1x USB Receiver, 1x Type-C Cable.</p>
+
+        <div class="rating">★★★★★ <small>4.7 | 850+ reviews</small></div>
+        <div class="price-box">
+          <div class="discount">R549.00</div>
+          <div class="price">R399.00 <span>SAVE 27%</span></div>
+          <div class="save-badge">You save R150.00 • Silver / White</div>
+        </div>
+      </div>
+      <div class="btn">
+        <button id="addToCartBtn">Add To Cart</button>
+        <div class="secure">✓ Secure checkout • Free delivery over R500 • 12-Month Warranty</div>
+      </div>
+    </div>
+
+    <div class="box-two">
+      <div class="image-box">
+        <img src="Product.png" alt="Slim Aluminium Wireless Keyboard and Mouse Combo - Silver White">
+      </div>
+      <div class="info">
+        <div class="brand">SLIM ALUMINIUM</div>
+        <div class="name">Wireless Keyboard & Mouse Combo</div>
+        <div class="tag">Silver / White • 78 Keys • 2.4GHz + Bluetooth • With Volume Knob</div>
+        <div class="colour-dots">
+          <div class="dot silver"></div>
+          <div class="dot white"></div>
+          <span>Silver / White - As Pictured</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="successModal">
+    <div class="modal-card">
+      <div class="check">✓</div>
+      <h2>Added to Cart!</h2>
+      <p>Your item has been successfully added to your cart.</p>
+      <div class="item">
+        <span>Slim Aluminium Combo - Silver / White</span>
+        <b>R399.00</b>
+      </div>
+      <div class="modal-btns">
+        <button class="btn-close" id="closeModalBtn">Continue Shopping</button>
+        <button class="btn-continue">View Cart →</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const addBtn = document.getElementById('addToCartBtn');
+  const modal = document.getElementById('successModal');
+  const closeBtn = document.getElementById('closeModalBtn');
+
+  function openModal(){
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  addBtn.addEventListener('click', ()=>{
+    addBtn.textContent = 'Adding...';
+    addBtn.disabled = true;
+    setTimeout(()=>{
+      addBtn.textContent = 'Add To Cart';
+      addBtn.disabled = false;
+      openModal();
+    }, 500);
+  });
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e)=>{ if(e.target===modal) closeModal(); });
+  document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeModal(); });
+</script>
+
+</body>
+</html>
